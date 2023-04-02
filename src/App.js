@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Navigation from "./Components/Navigation/Navigation";
 import { useState } from "react";
 import About from "./Components/Sections/About";
+import Service from "./Components/Sections/Services";
 
 function App() {
   const theme = useTheme();
@@ -15,6 +16,7 @@ function App() {
       <Header toggle={toggle} setToggle={setToggle} />
       <main>
         <About />
+        <Service />
       </main>
     </AppStyled>
   );
