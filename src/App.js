@@ -5,6 +5,7 @@ import Navigation from "./Components/Navigation/Navigation";
 import { useState } from "react";
 import About from "./Components/Sections/About";
 import Service from "./Components/Sections/Services";
+import Experience from "./Components/Sections/Experience";
 
 function App() {
   const theme = useTheme();
@@ -17,6 +18,7 @@ function App() {
       <main>
         <About />
         <Service />
+        <Experience />
       </main>
     </AppStyled>
   );
