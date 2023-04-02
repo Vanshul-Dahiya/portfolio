@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
 
-const Navigation = () => {
+const Navigation = ({ toggle }) => {
   const theme = useTheme();
   return (
-    <NavigationStyled theme={theme}>
+    <NavigationStyled theme={theme} toggle={toggle}>
       <ul className="nav-items">
         <li>
           <a href="/">Home</a>

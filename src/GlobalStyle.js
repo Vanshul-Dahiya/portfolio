@@ -11,7 +11,28 @@ export const GlobalStyle = createGlobalStyle`
 body{
     background-color:#1E1E1E ;
     font-family: 'Inter', sans-serif;
-    font-size:clamp(1rem, 1.5vw, 1.2rem)
+    font-size:clamp(1rem, 1.5vw, 1.2rem);
+    overflow-x:hidden;
+    &::-webkit-scrollbar{
+        width:6px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color:#ff4c60;
+        border-radius:10px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color:#ff4c60;
+        border-radius:10px;
+    }
+    
+
+}
+
+a,button,input{
+    font-family:inherit;
+    font-size:inherit;
+    text-decoration:none;
+    color:inherit;
 }
 
 #tsparticles{

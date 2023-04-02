@@ -7,14 +7,14 @@ import avatar from "../../img/avatar.png";
 import line from "../../img/line.png";
 import Particle from "../Particle";
 
-const Header = () => {
+const Header = ({ toggle, setToggle }) => {
   const theme = useTheme();
   return (
     <HeaderStyled theme={theme}>
       <div className="particles-con">
         <Particle />
       </div>
-      <div className="burger-menu">
+      <div className="burger-menu" onClick={() => setToggle(!toggle)}>
         <div className="line line1"></div>
         <div className="line line2"></div>
         <div className="line line3"></div>

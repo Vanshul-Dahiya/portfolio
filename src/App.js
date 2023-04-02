@@ -2,13 +2,20 @@ import styled from "styled-components";
 import { useTheme } from "./context/themeContext";
 import Header from "./Components/Header/Header";
 import Navigation from "./Components/Navigation/Navigation";
+import { useState } from "react";
+import About from "./Components/Sections/About";
 
 function App() {
   const theme = useTheme();
+  // state
+  const [toggle, setToggle] = useState(true);
   return (
     <AppStyled theme={theme}>
-      <Navigation />
-      <Header />
+      <Navigation toggle={toggle} />
+      <Header toggle={toggle} setToggle={setToggle} />
+      <main>
+        <About />
+      </main>
     </AppStyled>
   );
 }
