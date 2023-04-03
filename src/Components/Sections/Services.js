@@ -10,7 +10,7 @@ import ServiceItem from "../ServiceItem/ServiceItem";
 const Service = () => {
   const theme = useTheme();
   return (
-    <ServiceStyled theme={theme}>
+    <ServiceStyled id="services" theme={theme}>
       <Title name={"Service"} desc={"lorem2"} />
       <div className="services-con">
         <ServiceItem

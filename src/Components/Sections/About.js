@@ -14,7 +14,7 @@ import Stats from "../Stats/Stats";
 const About = () => {
   const theme = useTheme();
   return (
-    <AboutStyled theme={theme}>
+    <AboutStyled id="about" theme={theme}>
       <div className="about-info">
         <div className="about-image">
           <img src={about} alt="" />

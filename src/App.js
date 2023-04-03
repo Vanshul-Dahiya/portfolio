@@ -7,6 +7,7 @@ import About from "./Components/Sections/About";
 import Service from "./Components/Sections/Services";
 import Experience from "./Components/Sections/Experience";
 import Portfolios from "./Components/Sections/Portfolios";
+import Contact from "./Components/Sections/Contact";
 
 function App() {
   const theme = useTheme();
@@ -21,7 +22,17 @@ function App() {
         <Service />
         <Experience />
         <Portfolios />
+        <Contact />
       </main>
+      <footer>
+        <p>
+          Copyright &copy; 2023{" "}
+          <a href="https://github.com/vanshul-dahiya" target="_blank">
+            Vanshul Dahiya {""}
+          </a>
+          <span>~ All rights reserved.. </span>
+        </p>
+      </footer>
     </AppStyled>
   );
 }

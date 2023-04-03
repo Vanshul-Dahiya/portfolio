@@ -7,7 +7,7 @@ import Timeline from "../Timeline/Timeline";
 const Experience = () => {
   const theme = useTheme();
   return (
-    <ExpStyled theme={theme}>
+    <ExpStyled id='experience' theme={theme}>
       <Title name={"Experience"} desc={"lorem32"} />
       <div className="timeline-con">
         <Timeline  />
