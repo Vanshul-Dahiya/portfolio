@@ -6,6 +6,7 @@ import { useState } from "react";
 import About from "./Components/Sections/About";
 import Service from "./Components/Sections/Services";
 import Experience from "./Components/Sections/Experience";
+import Portfolios from "./Components/Sections/Portfolios";
 
 function App() {
   const theme = useTheme();
@@ -19,6 +20,7 @@ function App() {
         <About />
         <Service />
         <Experience />
+        <Portfolios />
       </main>
     </AppStyled>
   );
