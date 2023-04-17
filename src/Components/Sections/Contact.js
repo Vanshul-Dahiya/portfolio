@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
 import { SectionLayout } from "../../styles/Layout";
@@ -8,26 +9,45 @@ import Title from "../Title/Title";
 
 const Contact = () => {
   const theme = useTheme();
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_2ogmcym",
+        "template_8foltcl",
+        form.current,
+        "VoP-EW59hle8RtB_O"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          e.target.reset();
+        }
+      );
+  };
+
   return (
     <ContactStyled id="contact" theme={theme}>
-      <Title
-        name={"Lets Talk"}
-        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
-      />
-
+      <Title name={"Lets Talk"} desc={"..."} />
       <div className="contact-info">
-        <div className="map-section"></div>
-        <form action="" className="form-section">
+        <form onSubmit={sendEmail} ref={form} className="form-section">
           <div className="input-control">
-            <input type="text" placeholder="Your name" />
-            <input type="email" placeholder="Email address" />
+            <input name="name" type="text" placeholder="Your name" />
+            <input name="email" type="email" placeholder="Email address" />
           </div>
           <div className="input-control">
-            <input type="text" placeholder="Subject" />
+            <input name="subject" type="text" placeholder="Subject" />
           </div>
           <div className="input-control">
             <textarea
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="6"
@@ -40,8 +60,8 @@ const Contact = () => {
               blob="blob"
               bg={theme.colorPrimary}
               color={theme.colorWhite}
+              onclick={sendEmail}
               bFw={"600"}
-              onClick="onClick"
               bRad={"30px"}
               bPad={theme.bPad1}
             />
@@ -51,6 +71,7 @@ const Contact = () => {
     </ContactStyled>
   );
 };
+
 const ContactStyled = styled(SectionLayout)`
   position: relative;
   .contact-info {
@@ -59,15 +80,6 @@ const ContactStyled = styled(SectionLayout)`
     margin-top: 3rem;
     @media screen and (max-width: 973px) {
       flex-direction: column;
-    }
-    .map-section {
-      width: 40%;
-      position: relative;
-      img {
-        width: 100%;
-        object-fit: cover;
-        opacity: 0.1;
-      }
     }
     .form-section {
       flex: 1;
@@ -79,6 +91,7 @@ const ContactStyled = styled(SectionLayout)`
         gap: 1rem;
         input,
         textarea {
+          color: #000;
           width: 100%;
           padding: 1rem 1.5rem;
           border-radius: 30px;
@@ -92,4 +105,5 @@ const ContactStyled = styled(SectionLayout)`
     }
   }
 `;
+
 export default Contact;

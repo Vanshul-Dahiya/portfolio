@@ -35,7 +35,6 @@ const ButtonStyled = styled.button`
   }
   &:hover .blob {
     transform: scale(1.4);
-    border: 6px solid ${(props) => props.theme.colorGreen};
     transition: all 0.3s ease-in-out;
   }
 `;

@@ -4,6 +4,7 @@ import { useTheme } from "../../context/themeContext";
 import Button from "../Button/Button";
 import { brief } from "../../utils/Icons";
 import avatar from "../../img/avatar.png";
+import profile from "../../img/profile.png";
 import line from "../../img/line.png";
 import Particle from "../Particle";
 
@@ -33,22 +34,27 @@ const Header = ({ toggle, setToggle }) => {
             iusto.
           </p>
           <div className="btn-con">
-            <Button
-              name={"Hire me"}
-              blob={"blob"}
-              bg={theme.colorPrimary}
-              color={theme.colorWhite}
-              bFw={"600"}
-              bRad={"30px"}
-              bPad={theme.bPad1}
-              icon={brief}
-            />
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/vanshul-dahiya2401/"
+            >
+              <Button
+                name={"Hire me"}
+                blob={"blob"}
+                bg={theme.colorPrimary}
+                color={theme.colorWhite}
+                bFw={"600"}
+                bRad={"30px"}
+                bPad={theme.bPad1}
+                icon={brief}
+              />
+            </a>
           </div>
         </div>
       </div>
       <div className="right-header"></div>
       <div className="image-con">
-        <img src={avatar} alt="" />
+        <img src={profile} alt="" />
       </div>
       <div className="image-overlay"></div>
       <img src={line} alt="" className="image-line" />
@@ -172,7 +178,6 @@ const HeaderStyled = styled.header`
     img {
       margin-top: 80px;
       width: 600px;
-      filter: grayscale(100%) drop-shadow(5px -5px 20px rgba(0, 0, 0, 0.65));
     }
   }
   .image-overlay {

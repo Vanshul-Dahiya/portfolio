@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
 import { SectionLayout } from "../../styles/Layout";
-import about from "../../img/about.jpg";
+import profileAbout from "../../img/profileAbout.png";
 import shape1 from "../../img/shape1.png";
 import shape2 from "../../img/shape2.png";
 import Title from "../Title/Title";
@@ -10,6 +10,7 @@ import Button from "../Button/Button";
 import { brief, download, flame, medal } from "../../utils/Icons";
 import Progressbar from "../Progressbar/Progressbar";
 import Stats from "../Stats/Stats";
+import cv from "../../cv/cv.pdf";
 
 const About = () => {
   const theme = useTheme();
@@ -17,7 +18,7 @@ const About = () => {
     <AboutStyled id="about" theme={theme}>
       <div className="about-info">
         <div className="about-image">
-          <img src={about} alt="" />
+          <img src={profileAbout} alt="" />
         </div>
         <div className="about-content">
           <Title name={"About Me"} />
@@ -44,17 +45,19 @@ const About = () => {
             />
           </div>
           <div className="btn-con">
-            <Button
-              name="Download CV"
-              blob="blog"
-              icon={download}
-              bg={theme.colorPrimary}
-              color={theme.colorWhite}
-              bFw={"600"}
-              onClick="onClick"
-              bRad={"30px"}
-              bPad={theme.bPad1}
-            />
+            <a href={cv} download>
+              <Button
+                name="Download CV"
+                blob="blog"
+                icon={download}
+                bg={theme.colorPrimary}
+                color={theme.colorWhite}
+                bFw={"600"}
+                onClick="onClick"
+                bRad={"30px"}
+                bPad={theme.bPad1}
+              />
+            </a>
           </div>
         </div>
       </div>
