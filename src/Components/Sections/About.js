@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
 import { SectionLayout } from "../../styles/Layout";
-import profileAbout from "../../img/profileAbout.png";
+import profileAbout2 from "../../img/profileAbout2.jpg";
 import shape1 from "../../img/shape1.png";
 import shape2 from "../../img/shape2.png";
 import Title from "../Title/Title";
@@ -18,24 +18,28 @@ const About = () => {
     <AboutStyled id="about" theme={theme}>
       <div className="about-info">
         <div className="about-image">
-          <img src={profileAbout} alt="" />
+          <img src={profileAbout2} alt="" />
         </div>
         <div className="about-content">
           <Title name={"About Me"} />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            necessitatibus libero molestias, autem, quasi inventore excepturi
-            adipisci, molestiae aut consectetur dolorem rem recusandae.
+            As a third-year college student with a passion for web development,
+            I am excited to showcase my skills and experience in the field
+            through my portfolio. With a strong foundation in full-stack web
+            development, native Android development, and cross-platform app
+            development, I am confident in my ability to create dynamic and
+            engaging web projects that meet the needs of any organization. Apart
+            from that i also love playing chess , volleyball and badminton.
           </p>
           <div className="progress-bars">
             <Progressbar
               bg={theme.colorPrimary}
-              service={"Web Dev"}
+              service={"Full Stack Development"}
               progress={"85"}
             />
             <Progressbar
               bg={theme.colorGreen}
-              service={"Web Dev"}
+              service={"Flutter Development"}
               progress={"75"}
             />
             <Progressbar
@@ -62,9 +66,9 @@ const About = () => {
         </div>
       </div>
       <div className="stats-container">
-        <Stats icon={flame} number="100+" desc="All completed projects" />
-        <Stats icon={brief} number="100+" desc="All completed projects" />
-        <Stats icon={medal} number="100+" desc="All completed projects" />
+        <Stats icon={flame} number="25+" desc="All completed projects" />
+        <Stats icon={brief} number="2+" desc="Years of learning" />
+        <Stats icon={medal} number="3" desc="Certificates" />
       </div>
       <img src={shape1} alt="shape1" className="shape1" />
       <img src={shape2} alt="shape2" className="shape2" />

@@ -79,8 +79,13 @@ const Portfolios = () => {
   };
 
   return (
-    <PortfoliosStyled theme={theme} id='portfolios' >
-      <Title name={"Portfolios"} desc={"lroemrmemek"} />
+    <PortfoliosStyled theme={theme} id="portfolios">
+      <Title
+        name={"Portfolios"}
+        desc={
+          "Some of my projects are here. Check out my github account for all projects"
+        }
+      />
       <div className="filter-btns">
         {categories.map((cat, index) => {
           return (

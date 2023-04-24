@@ -26,7 +26,7 @@ function App() {
       </main>
       <footer>
         <div className="links">
-          <a href="https://github.com/vanshul_dahiya" target="blank">
+          <a href="https://github.com/Vanshul-Dahiya" target="blank">
             <i
               style={{
                 color: "#ff4c60",

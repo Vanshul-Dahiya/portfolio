@@ -8,8 +8,13 @@ const TimelineItem = ({ duration, title, desc, icon }) => {
     <TimelineItemStyled theme={theme}>
       <div className="timeline-info">
         <p className="duration"> {duration} </p>
-        <h4> {title} </h4>
-        <p> {desc} </p>
+        {title && (
+          <>
+            <h4> {title} </h4>
+            <p> {desc} </p>
+          </>
+        )}
+        {!title && <p> {desc} </p>}
       </div>
       <div className="icon">{icon}</div>
     </TimelineItemStyled>

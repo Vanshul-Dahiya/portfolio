@@ -11,28 +11,39 @@ const Service = () => {
   const theme = useTheme();
   return (
     <ServiceStyled id="services" theme={theme}>
-      <Title name={"Service"} desc={"lorem2"} />
+      <Title
+        name={"Service"}
+        desc={
+          "I'm currently looking for an internship as full-stack developer. Last 2 years, I've spent learning different technologies, programming languages and different frameworks to develop web applications."
+        }
+      />
       <div className="services-con">
         <ServiceItem
-          icon={design}
-          title={"web design"}
+          icon={code}
+          title={"Full stack"}
           bg={theme.colorPurple}
           shadow={theme.shadowPurple}
-          desc={"llorenkner"}
+          desc={
+            "I can create a full stack application using MERN stack as per the client's request."
+          }
         />
         <ServiceItem
           icon={desktop}
-          title={"web design"}
+          title={"Flutter Development"}
           bg={theme.colorGreenDark}
           shadow={theme.shadowGreen}
-          desc={"llorenkner"}
+          desc={
+            "I can also help to create a cross platform application using flutter for android, iOS as well as web platforms."
+          }
         />
         <ServiceItem
-          icon={code}
-          title={"web design"}
-          bg={theme.colorPrimary}
+          icon={design}
+          title={"Frontend Development"}
           shadow={theme.shadowPrimary}
-          desc={"llorenkner"}
+          bg={theme.colorPrimary}
+          desc={
+            "I can create responsive, simple yet attractive UI as per the client's request."
+          }
         />
       </div>
     </ServiceStyled>

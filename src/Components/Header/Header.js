@@ -22,16 +22,16 @@ const Header = ({ toggle, setToggle }) => {
       </div>
       <div className="left-header">
         <div className="left-h-content">
-          <h2>Hi , </h2>
+          <h2>Hi there, </h2>
           <h1>
             I am Vanshul <span>.</span>
           </h1>
           <p className="profession"> Web Developer </p>
           <p className="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-            adipisci quibusdam ullam, vitae consequuntur quia vero suscipit
-            laborioriam sequi quae natus recusandae repudiandae, iure magni
-            iusto.
+            I'm a 3rd year college student currently working in the
+            field of web development using MERN stack . Well-versed in tech stacks
+            which includes full stack web development ,native android development &
+            cross platform app development.
           </p>
           <div className="btn-con">
             <a

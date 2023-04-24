@@ -7,10 +7,13 @@ import Timeline from "../Timeline/Timeline";
 const Experience = () => {
   const theme = useTheme();
   return (
-    <ExpStyled id='experience' theme={theme}>
-      <Title name={"Experience"} desc={"lorem32"} />
+    <ExpStyled id="experience" theme={theme}>
+      <Title
+        name={"Experience"}
+        desc={"My internship , education and skills."}
+      />
       <div className="timeline-con">
-        <Timeline  />
+        <Timeline />
       </div>
     </ExpStyled>
   );
