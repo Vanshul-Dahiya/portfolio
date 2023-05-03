@@ -11,6 +11,7 @@ import pokidex from "../img/Saved Pictures/pokidex.png";
 import portF from "../img/Saved Pictures/portfolioImage.png";
 import ipl from "../img/Saved Pictures/ipl.png";
 import dadJ from "../img/Saved Pictures/dadJoke.png";
+import socialMedia from "../img/Saved Pictures/socialMedia.png";
 import formula from "../img/Saved Pictures/formula.jpeg";
 import url from "../img/Saved Pictures/url.jpeg";
 import mail from "../img/Saved Pictures/mail.jpeg";
@@ -103,6 +104,16 @@ export const portfolios = [
     image: dadJ,
     link1: "https://github.com/Vanshul-Dahiya/chrome-extension",
     link2: "https://github.com/Vanshul-Dahiya/chrome-extension",
+    icon1: git,
+    icon2: eye,
+  },
+  {
+    id: uuid(),
+    category: "Chrome Extensions",
+    title: "Social Media Blocker",
+    image: socialMedia,
+    link1: "https://github.com/Vanshul-Dahiya/social-media-blocker/",
+    link2: "https://github.com/Vanshul-Dahiya/social-media-blocker/",
     icon1: git,
     icon2: eye,
   },
