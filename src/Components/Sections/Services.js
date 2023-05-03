@@ -14,13 +14,13 @@ const Service = () => {
       <Title
         name={"Service"}
         desc={
-          "I'm currently looking for an internship as full-stack developer. Last 2 years, I've spent learning different technologies, programming languages and different frameworks to develop web applications."
+          "Last 2 years, I've spent learning different technologies, programming languages and different frameworks to develop web and android applications. I'm currently looking for an internship as full-stack developer. "
         }
       />
       <div className="services-con">
         <ServiceItem
           icon={code}
-          title={"Full stack"}
+          title={"Full stack Development"}
           bg={theme.colorPurple}
           shadow={theme.shadowPurple}
           desc={
@@ -29,12 +29,10 @@ const Service = () => {
         />
         <ServiceItem
           icon={desktop}
-          title={"Flutter Development"}
+          title={"App Development"}
           bg={theme.colorGreenDark}
           shadow={theme.shadowGreen}
-          desc={
-            "I can also help to create a cross platform application using flutter for android, iOS as well as web platforms."
-          }
+          desc={"I can also help to create a android application using Kotlin."}
         />
         <ServiceItem
           icon={design}

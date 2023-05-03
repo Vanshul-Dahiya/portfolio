@@ -16,15 +16,15 @@ const Timeline = () => {
           icon={desktop}
         />
         <TimelineItem
-          duration={"2018-2020"}
-          title={"Higher Secondary"}
-          desc={"CGPA : 8.2"}
+          duration={"2020-2024"}
+          title={"PDM University"}
+          desc={"B.Tech C.S.E  |   CGPA : 8.6"}
           icon={education}
         />
         <TimelineItem
-          duration={"2016-2018"}
-          title={""}
-          desc={"CGPA : 9.6 "}
+          duration={"2018-2020"}
+          title={"Higher Secondary"}
+          desc={"BrahmaShakti Public School  |   CGPA : 8"}
           icon={education}
         />
       </div>
@@ -36,6 +36,8 @@ const Timeline = () => {
         <TimelineItem desc={"MongoDB"} icon={education} />
         <TimelineItem desc={"Flutter"} icon={education} />
         <TimelineItem desc={"SQL"} icon={education} />
+        <TimelineItem desc={"Kotlin"} icon={education} />
+        <TimelineItem desc={"JS"} icon={education} />
         <TimelineItem desc={"Git/Github"} icon={education} />
       </div>
     </TimelineStyled>
